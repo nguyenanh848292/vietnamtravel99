@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/Asset/logo/travel-tourism-logo-concept-agency-tour-operator-handwritten-lettering-abstract-kids-doodle-vietnam-buildings-summer-102205396.jpg">
+
+    <title>ベトナムへようこそ</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./CSS/reponsive.css">
+    <link rel="stylesheet" href="./CSS/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="./CSS/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./Fonts/fonts/themify-icons/themify-icons.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./CSS/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+
+<body>
+    <div id="show-menu-btn-s" class="show-menu-btn js-show-menu">
+        <h3><i class="ti-angle-double-right show-menu-icon "></i></h3>
+    </div>
+    <div class="modal-menu js-modal-menu">
+        <div class="modal-menu-place ">
+            <div id="modal-menu-container" class="js-modal-menu-container">
+                <i class="menu-close-icon js-menu-close-icon ti-angle-double-left"></i>
+                <div class="header-menu-place">
+                    <h2 class="text-header">Place</h2>
+                </div>
+                <div class="modal-menu-place-body">
+                    <li><a class="js-subnav-close" href="#"><i class="ti-home tick-icon-menu"></i> HOME</a></li>
+                    <li><a class="js-subnav-close" href="#hanoi"><i class="ti-hand-point-right tick-icon-menu"></i> Ha Noi</a></li>
+                    <li><a class="js-subnav-close" href="#hochiminh"><i class="ti-hand-point-right tick-icon-menu"></i> Ho Chi Minh City</a></li>
+                    <li><a class="js-subnav-close" href="#hue"><i class="ti-hand-point-right tick-icon-menu"></i> Hue</a></li>
+                    <li><a class="js-subnav-close" href="#hoian"><i class="ti-hand-point-right tick-icon-menu"></i> Hoi An</a></li>
+                    <li><a class="js-subnav-close" href="#halong"><i class="ti-hand-point-right tick-icon-menu"></i> Halong Bay</a></li>
+                    <li><a class="js-subnav-close" href="#sapa"><i class="ti-hand-point-right tick-icon-menu"></i> Sapa</a></li>
+                    <li><a class="js-subnav-close" href="#phuquoc"><i class="ti-hand-point-right tick-icon-menu"></i> Phu Quoc</a></li>
+                    <li><a class="js-subnav-close" href="#danang"><i class="ti-hand-point-right tick-icon-menu"></i> Da Nang</a></li>
+                    <li><a class="js-subnav-close" href="#nhatrang"><i class="ti-hand-point-right tick-icon-menu"></i> Nha Trang</a></li>
+                    <li><a class="js-subnav-close" href="#dalat"><i class="ti-hand-point-right tick-icon-menu"></i> Dalat</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- .....................JS SHOW MENU............... -->
+    <script>
+        const menuBtn = document.querySelector('.js-show-menu')
+        const modalMenu = document.querySelector('.js-modal-menu')
+        const closeMenus =document.querySelectorAll('.js-subnav-close')
+        const closeIcon = document.querySelector('.js-menu-close-icon')
+        const modalContainerMenu = document.querySelector('.js-modal-menu-container')
+        function showMenu () {
+            modalMenu.classList.add('open')
+        }
+
+        function hideMenu () {
+            modalMenu.classList.remove('open')
+        } 
+
+        menuBtn.addEventListener('click', showMenu)
+
+        for ( const closeMenu of closeMenus) {
+            closeMenu.addEventListener('click', hideMenu)
+        }
+
+        closeIcon.addEventListener('click', hideMenu)
+        modalMenu.addEventListener('click', hideMenu)
+
+        modalContainerMenu.addEventListener('click', function (event){
+            event.stopPropagation(modalContainerMenu)
+        }
+        )
+    </script>
+
+
+
+<!-- ................................ -->
+<div id="move-up-s" class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+</div>
+<!-- <a id="nutbacktotop" href="javascript:void(0)" title="Back to Top"><img src="https://nhatbanonline.net/wp-content/uploads/2019/03/back-to-top.png" alt="Quay lại đầu trang"/></a> -->
+<script>
+//Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+   window.onscroll = function() {scrollFunction()};
+   // khai báo hàm scrollFunction
+   function scrollFunction() {
+       // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+       if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+           //nếu lớn hơn 2000px thì hiện button
+           document.getElementById("move-up-s").style.display = "block";
+       } else {
+            //nếu nhỏ hơn 20px thì ẩn button
+           document.getElementById("move-up-s").style.display = "none";
+       }
+   }
+   //gán sự kiện click cho button
+   document.getElementById('move-up-s').addEventListener("click", function(){
+       //Nếu button được click thì nhảy về đầu trang
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+   });
+  </script>
+<!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="" class="text-gray">VietNam</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#">ホームページ</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#food">食べ物</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#travel">トラベル</a>
+                                              
+                    </li>
+                    <li class="nav-link">
+                        <a href="#festival">フェスティバル＆ホリデー</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">お問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+
+        <!------------------------ Site Title ---------------------->
+
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="home-heading">フェスティバル＆フード＆トラベル</h3>
+                <h1 class="home-heading-sub">ベトナムへようこそ</h1>
+                <button class="btn vietnamBtn"><a href="https://vietnam.travel/sites/default/files/360Tour/VietNam/index.htm" target="_blank">ベトナムを見る</a></button>
+            </div>
+        </section>
+
+        <!------------x----------- Site Title ----------x----------->
+
+        <!-- --------------------- Blog Carousel ----------------- -->
+
+        <section>
+            <div class="blog">
+                <div class="container" id="food">
+                    <h1 class="food-text">ベトナム料理</h1>
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./Asset/img/Pho.jpg" class="food-img" alt="post-1">
+                            <div class="blog-title">
+                                <h3>フォー</h3>
+                                <button class="btn btn-blog js-btn-pho">詳細</button>
+                                <!-- <span>2 minutes</span> -->
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                            <img src="./Asset/img/banhchung.jpg" class="food-img" alt="post-1">
+                            <div class="blog-title">
+                                <h3>バインチュン</h3>
+                                <button class="btn btn-blog js-btn-banhchung">詳細</button>
+                                <!-- <span>2 minutes</span> -->
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                            <img src="./Asset/img/banhmi.jpg" class="food-img" alt="post-1">
+                            <div class="blog-title">
+                                <h3>バインミー</h3>
+                                <button class="btn btn-blog js-btn-banhmi">詳細</button>
+                                <!-- <span>2 minutes</span> -->
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./Asset/img/Banhxeo.jpg" class="food-img" alt="post-1">
+                            <div class="blog-title">
+                                <h3>バインセオ</h3>
+                                <button class="btn btn-blog js-btn-banhxeo">詳細</button>
+                                <!-- <span>2 minutes</span> -->
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./Asset/img/nemcuon.jpg" class="food-img" alt="post-1">
+                            <div class="blog-title">
+                                <h3>ゴイ・クオン</h3>
+                                <button class="btn btn-blog js-btn-goicuon">詳細</button>
+                                <!-- <span>2 minutes</span> -->
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------x---------- Blog Carousel --------x-------- -->
+
+        <!-- ---------------------- Site Content -------------------------->
+
+        <section class="container" id="travel">
+            <div class="site-content">
+                <div class="posts">
+                    <h3 class="travel-text">おすすめベトナム観光スポット</h3>
+                    <!-- --------------------------------HA NOI---------------------------------- -->
+                    <div id="hanoi">
+                        <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/travel/Ha Noi.jpg" class="img" alt="blog1">
+                                </div>                            
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/destination/hanoi.html" target="_blank">HA NOI （ハノイ）-ハノイはベトナムの首都です。</a>
+                                <p>
+                                    ハノイに行くと、アンティークとモダン、静けさと混沌、伝統と革新という、常に共存する街の2つの反対の州をすぐに見ることができます。ベトナムの首都は、豊かな歴史と文化の本来の魅力を維持することと、世界中の最も現代的な価値観に適応することとの間の素晴らしいバランスをとっています。
+                                </p>
+                                <button class="btn post-btn"> <a style="font-size: 15px;" href="https://vietnam.travel/sites/default/files/360Tour/HaNoi/index.htm" target="_blank">ハノイを見る </a> &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- --------------------------------HO CHI MINH CITY---------------------------------- -->
+                    <div id="hochiminh">
+                        <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/travel/HCM.jpg" class="img" alt="blog1">
+                                </div>                            
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/destination/ho-chi-minh-city.html" target="_blank">HO CHI MINH CITY （ホーチミン市）-ホーチミン市はベトナムの経済の中心地であり、ベトナムの経済の大部分を占めています。</a>
+                                <p>
+                                    ホーチミン市は、多くのメガモール、娯楽施設、および強化された公共交通機関の建設により、典型的な国際都市として台頭しています。旅行者は、ノートルダム大聖堂や中央郵便局などの伝統的な観光名所以外の旅程を選択できるようになりました。また、現在では、手頃なホステルから高級ホテルまで、さまざまな種類のレストランや宿泊施設を選ぶことができます。ホーチミン市への旅行は、東南アジアのハブの台頭に対するあなたの期待を満たし、典型的なエキゾチックな熱帯の土地の想像力を超えます
+                                </p>
+                                <button class="btn post-btn"> <a style="font-size: 15px;" href="https://vietnam.travel/sites/default/files/360Tour/HoChiMinhCity/index.htm" target="_blank">ホーチミン市を見る</a> &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- --------------------------------HUE---------------------------------- -->
+                    <div id="hue">
+                        <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/travel/Hue.jpg" class="img" alt="blog1">
+                                </div>                            
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/destination/hue.html" target="_blank">HUE （フェ）-フェは物語がぎっしり詰まった街です。</a>
+                                <p>
+                                    この東南アジアの国の他の地域で猛威を振るっているペースの速い都市化と文化的同化にもかかわらず、古いベトナムは大きく書かれていると最もよく説明されていますが、ベトナムのかつての首都としてのフエは、その長い歴史、雰囲気のある寺院、崇高さに誇りを持っていますベトナムの他の場所ではほとんど見られない王宮と独特の文化的特徴。城塞内の壁に囲まれた囲い地である帝国都市のエキゾチックな要素に加えて、フエはユネスコによって認識されている文化遺産の要素で非常によく知られています。その1つがNhãNhạc（ベトナムの宮廷音楽）です。
+                                </p>
+                                <button class="btn post-btn"> <a style="font-size: 15px;" href="https://vietnam.travel/sites/default/files/360Tour/Hue/index.htm" target="_blank">フェを見る</a> &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- --------------------------------HOI AN---------------------------------- -->
+                    <div id="hoian">
+                        <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/travel/Hoi an.jpg" class="img" alt="blog1">
+                                </div>                            
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/destination/hoi-an.html" target="_blank">HOI AN （ホイアン）-ホイアンは、大胆な進歩の行進がのんびりと歩き回る場所です。</a>
+                                <p>
+                                    かつては賑やかな貿易港だったホイアンは、今では素朴で魅力的な文化の魅力であり、あらゆる訪問者を魅了しています。街は時が経つにつれて忘れられているようで、黄金時代からの伝統的な遺産の多くを保持しています。この場所は明らかに東西文化の交差点であり、料理、建築、と地元の伝統。
+                                </p>
+                                <button class="btn post-btn"> <a style="font-size: 15px;" href="https://vietnam.travel/sites/default/files/360Tour/HoiAn/index.htm" target="_blank">ホイアンを見る</a> &nbsp; <i class="fas fa-arrow-right"></i></button>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- --------------------------------HA LONG---------------------------------- -->
+                    <div id="halong">
+                        <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/travel/Ha long.jpg" class="img" alt="blog1">
+                                </div>                            
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/destination/halong-bay.html" target="_blank">VINH HA LONG （ハロン湾）-多くの人にとって、ハロン湾の海の景色はベトナムの代名詞です。</a>
+                                <p>
+                                    ユネスコによって世界遺産として2回認識されているハロン湾は、手付かずの自然の美しさと活気に満ちた街の雰囲気が見事に調和した、国内外の観光客にとってベトナムで一流の目的地の1つです。ハロン湾は、ハノイから約170kmのクアンニン省ハロン市のトンキン湾内にある石灰岩の島々の複合体を所有しています。ハロン湾は、北東のバイトゥロン湾、南と東のキャットバ群島とランハ湾に囲まれています。あなたの旅行を賢くそして不思議に計画するために、このガイドをチェックして、「下降するドラゴンの土地」への次の旅行のために必要なすべての情報を入手してください。
+                                </p>
+                                <button class="btn post-btn"> <a style="font-size: 15px;" href="https://vietnam.travel/sites/default/files/360Tour/HaLong/index.htm" target="_blank">ハロンを見る</a> &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- --------------------------------SA PA---------------------------------- -->
+                    <div id="sapa">
+                        <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/travel/Sa pa.jpg" class="img" alt="blog1">
+                                </div>                            
+                            </div>
+                            <div class="post-title">                                
+                                    <a href="https://www.vietnamonline.com/destination/sapa.html" target="_blank">SAPA （サパ）-サパはベトナムに住む少数民族で有名です。</a>
+                                <p>
+                                    地元では「雲の町」として知られるサパは、ベトナム北西部の魅力的な宝庫です。一目見ただけで、象徴的なカスケード段々になった田んぼ、緑豊かな渓谷、並んでいるエメラルドの山々の美しさに、旅行者を楽々と魅了します。自然に恵まれたサパが、国内で最も魅力的な目的地の1つになったことは不思議ではありません。                      </p>
+                                <button class="btn post-btn"> <a style="font-size: 15px;" href="https://vietnam.travel/sites/default/files/360Tour/DaNang/index.htm" target="_blank">サパを見る</a> &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- --------------------------------PHU QUOC---------------------------------- -->
+                    <div id="phuquoc">
+                        <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/travel/phu quoc.jpg" class="img" alt="blog1">
+                                </div>                            
+                            </div>
+                            <div class="post-title">                                
+                                    <a href="https://www.vietnamonline.com/destination/phu-quoc.html" target="_blank">PHU QUOC （フーコック）-フーコックは「パール島」という名前で有名であり、ベトナム最大の島でもあります。</a>
+                                <p>
+                                    フーコックは「パール島」という名前で有名であり、ベトナム最大の島でもあります。青い翡翠の海水、白い砂浜、一年中快適な天気、そして旅行者のためのホテルやリゾートの大きなシステムを備えたフーコックは、本当のビーチパラダイスであり、ほとんどすべての海の愛好家のトップチョイスの1つになっています。
+                                </p>
+                                <button class="btn post-btn"> <a style="font-size: 15px;" href="https://vietnam.travel/sites/default/files/360Tour/DaNang/index.htm" target="_blank">フーコックを見る</a> &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <!-- --------------------------------DA NANG---------------------------------- -->
+                    <div id="danang">
+                        <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/travel/da nang.jpg" class="img" alt="blog1">
+                                </div>                            
+                            </div>
+                            <div class="post-title">                                
+                                    <a href="https://www.vietnamonline.com/destination/da-nang.html" target="_blank">DA NANG （ダナン）-ダナンはベトナム中部で最大の都市であり、ベトナムで最も重要な港の1つです。</a>
+                                <p>
+                                    雄大な大理石の山々とターコイズブルーの東海に囲まれたダナンは、ベトナム中部の輝く海岸線にある楽園の味を提供します。ベトナムに住むのに最適な場所として知られているだけでなく、この沿岸都市は、トリップアドバイザーによって2020年に世界で最も人気のある目的地にその場所を見つけました。世界で最も美しいビーチのいくつかを所有しているダナンは、自然の魅力とモダンな価値観が完璧に調和している場所です。
+                                </p>
+                                <button class="btn post-btn"> <a style="font-size: 15px;" href="https://vietnam.travel/sites/default/files/360Tour/DaNang/index.htm" target="_blank">ダナンを見る</a> &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- --------------------------------NHA TRANG---------------------------------- -->
+                    <div id="nhatrang">
+                        <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/travel/Nha trang.jpg" class="img" alt="blog1">
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/destination/nha-trang.html" target="_blank">NHA TRANG （ニャチャン）-南海岸の手付かずの場所にあるニャチャンは、日光浴をする人の遊び場です。</a>
+                                <p>
+                                    なじみのある人には、ニャチャンはすぐに、三日月形の白い砂浜、大小の島々のある見事な湾、そして周囲の緑豊かな丘の広いシステムを備えた美しい長い海岸線のイメージを思い起こさせます。恵まれた自然の風景を超えて、ニャチャンは旅行者を古代チャムの人々の史跡を訪れたり、シーフードの天国に浸ったり、活気のあるナイトライフに参加したり、冒険的なウォータースポーツを試したり、特に泥風呂を楽しんだりするなど、さまざまなレクリエーション活動で忙しくしています。
+                                </p>
+                                <button class="btn post-btn"> <a style="font-size: 15px;" href="https://vietnam.travel/sites/default/files/360Tour/NhaTrang2021/index.htm" target="_blank">ニャチャンを見る</a> &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- --------------------------------DA LAT---------------------------------- -->
+                    <div id="dalat">
+                        <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/travel/da lat.jpg" class="img" alt="blog1">
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/destination/dalat.html" target="_blank">DALAT （ダラット）-ダラットは、ベトナムとフランスアルプスの十字架のように見えます。</a>
+                                <p>
+                                    ダラットはベトナムとフランスアルプスの十字架のように見えます。そのホテルや家の多くは、フランスの植民地時代にフランス風に建てられました。フランスの建築家モンセットとレベロンによって設計されたダラット駅や、滞在するのにも興味深い場所である「クレイジーハウス」として知られるハンガゲストハウスなど、建築に興味のある観光客が訪れる場所はたくさんあります。
+                                </p>
+                                <button class="btn post-btn"> <a style="font-size: 15px;" href="https://vietnam.travel/sites/default/files/360Tour/NhaTrang2021/index.htm" target="_blank">ダラットを見る</a> &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination flex-row">
+                        <a href="#"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="pages">1</a>
+                        <a href="#" class="pages">2</a>
+                        <a href="#" class="pages">3</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                </div>
+                <aside class="sidebar">
+                    <div class="category">
+                        <h2>ベトナム</h2>
+                        <ul class="category-list">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                                <a href="#">ベトナム社会主義共和国</a>
+                                <!-- <span>(05)</span> -->
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                                <a href="#">首都：&emsp; ハノイ</a>
+                                <!-- <span>(02)</span> -->
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                                <a href="#">面積： &emsp; 約31万1,000k㎡</a>
+                                <!-- <span>(07)</span> -->
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
+                                <a href="#">人口：&emsp; 約9,734万人</a>
+                                <!-- <span>(01)</span> -->
+                            </li>              
+                        </ul>
+                    </div>
+
+                    <div class="popular-post" id="festival">
+                        <h2>フェスティバル＆ホリデー</h2>
+                        <!-- --------------------------------TET---------------------------------- -->
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="/Asset/Popular-post/Tet.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;01月01日 (旧暦)</span>
+                                    <!-- <span></span> -->
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/tet.html" target="_blank">ベトナムの旧正月 (テトホリデー)</a>
+                                <p>テトはベトナムの正月であり、ベトナムで最も重要な祭りと祝日です。</p>
+                            </div>
+                        </div>
+
+                         <!-- --------------------------------GIAI PHONG DAT NUOC---------------------------------- -->
+                         <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/Popular-post/giai phong mien nam.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>04月30日</span>
+                                    <!-- <span>2 Commets</span> -->
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/tet.html" target="_blank">解放記念日/南部解放記念日</a>
+                                <p>ベトナム語で「NgàyThốngnhất」として知られ、勝利の日または解放の日としても知られています。一部のベトナム人はその日を「サイゴン陥落」と呼ぶかもしれません。</p>
+                            </div>
+                        </div>
+                       
+                         <!-- --------------------------------QUOC KHANH---------------------------------- -->
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="500">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/Popular-post/quockhanh.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;09月02日</span>
+                                    <!-- <span>2 Commets</span> -->
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/tet.html" target="_blank">独立記念日</a>
+                                <p>
+                                    1945年9月2日にハノイのバーディン広場でベトナムの独立宣言を読んだホーチミン大統領を記念して、9月2日に観測されたベトナムの国民の祝日です。これは国の国民の日です。
+                                </p>
+                            </div>
+                        </div>
+                        
+                         <!-- --------------------------------QUOC TE PHU NU---------------------------------- -->
+                         <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/Popular-post/Quoc te phu nu.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>10月20日</span>
+                                    <!-- <span>2 Commets</span> -->
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/tet.html" target="_blank">ベトナム女性の日</a>
+                                <p>
+                                    3月8日の国際女性の日とは別に、ベトナムは10月20日の国際女性の日も祝います。
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- --------------------------------GIO TO HUNG VUONG---------------------------------- -->
+                         <div class="post-content" data-aos="flip-up" data-aos-delay="300">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/Popular-post/gioto.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;03月10日 (旧暦)</span>
+                                    <!-- <span>2 Commets</span> -->
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/tet.html" target="_blank">フンヴォン記念日</a>
+                                <p>
+                                    このお祭りは、毎年第3朔望月の8日から11日まで行われるため、常に変わります。主な祭りの日は月の10日で、ベトナム全土の祝日として認識されています。
+                                </p>
+                            </div>
+                        </div>
+
+                          <!-- --------------------------------TRUNG THU---------------------------------- -->
+                          <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/Popular-post/Trung Thu.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;15 8月15日(旧暦)</span>
+                                    <!-- <span>2 Commets</span> -->
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/tet.html" target="_blank">中秋節</a>
+                                <p>
+                                    ベトナムの人々は何千年もの間中秋節を祝っており、それは私たちの文化的生活の中で重要な機会になっています。
+                                </p>
+                            </div>
+                        </div>
+
+
+                         <!-- --------------------------------HOI AN FESTIVAL---------------------------------- -->
+                         <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/Popular-post/hoi an festival.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>10月30日</span>
+                                    <!-- <span>2 Commets</span> -->
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/tet.html" target="_blank">ホイアンランタン祭り</a>
+                                <p>
+                                    ホイアンランタン祭りは、満月を祝う毎月のイベントです。満月は仏教暦で最も神聖な時期の1つです。仏陀は満月に生まれただけでなく、満月に悟りを開いたと言われています。
+                                </p>
+                            </div>
+                        </div>
+                         <!-- --------------------------------HUE FESTIVAL---------------------------------- -->
+                         <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/Popular-post/hue festival.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>04月30日</span>
+                                    <!-- <span>2 Commets</span> -->
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/tet.html" target="_blank">フェ祭り</a>
+                                <p>
+                                    2年ごとに開催されるフエ市の大きな文化イベントです。フェスティバルシーズンごとに1週間（通常は4月、5月、6月）があり、ベトナムの旧首都の文化的および歴史的価値を称える機会です。最初のフエフェスティバルは2000年に開催されました。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- --------------------------------TET NGUYEN TIEU---------------------------------- -->
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/Popular-post/Tet Nguyen Tieu.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>01月15日（旧暦）</span>
+                                    <!-- <span>2 Commets</span> -->
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/tet.html" target="_blank">今年の最初の満月</a>
+                                <p>
+                                    テトのほかに、テトグエンティウ（新年の最初の満月）は、外国人がベトナム文化を徹底的に体験する良い機会でもあります。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- --------------------------------PHU　DAY---------------------------------- -->
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./Asset/Popular-post/Phu giay.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>03月10日</span>
+                                    <!-- <span>2 Commets</span> -->
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.vietnamonline.com/tet.html" target="_blank">フーデー祭り</a>
+                                <p>
+                                    ベトナムの民間伝承の4人の不死者の1人である母なる女神LieuHanhを称えるために毎年開催されます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- -------------------------------CONTACT--------------------------------------------- -->
+                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300" id="contact">
+                        <h2>コンタクト</h2>
+                        <form action="">
+                            <div class="form-element">
+                                <input type="text" class="input-element" required placeholder="メッセージ">
+                                <br>
+                                <br>
+                                <input type="text" class="input-element" required placeholder="Eメール">
+                                <button class="btn form-btn" style="width: 86%;">送信</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="popular-tags">
+                        <h2>Festival & Holiday Tags</h2>
+                        <div class="tags flex-row">
+                            <span class="tag" data-aos="flip-up" data-aos-delay="100">Hue Festival</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="200">Hoi An Lantern Festival</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="300">Trung Thu Festival</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="400">Hung Kings Festival</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="500">Independence Day</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="600">Reunification Day</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="700">Tet holiday</span>
+                            <!-- <span class="tag" data-aos="flip-up" data-aos-delay="800">project</span> -->
+                        </div>
+                    </div>
+                    
+                    <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                        <h2>ベトナム旅行・ツアー</h2>
+                        <div class="post-image">
+                            <div>
+                                <img src="./mb32.png" class="img" alt="blog1">
+                            </div>                            
+                        </div>
+                        <div class="post-title">
+                            <button class="btn post-btn travel-btn" style="width: 87%;"> <a style="font-size: 15px;" href="https://www.hankyu-travel.com/vietnam/" target="_blank"> <i class="ti-hand-point-right"></i>チケット予約</a> &nbsp; </button>
+                        </div>
+                    </div>
+                    
+                </aside>
+            </div>
+        </section>
+
+        <!-- -----------x---------- Site Content -------------x------------>
+
+    </main>
+
+    <!---------------x------------- Main Site Section ---------------x-------------->
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>ベトナムについて</h2>
+                <p>
+                    ベトナムの面積は331,210平方キロメートル（127,881平方マイル）で、東南アジアの東海岸地帯もあります。土地の大部分は丘陵または山岳地帯であり、森林が多く、平坦地は約20％にすぎません。ほとんどの都市と農場は、川の谷と三角州の周りに集中しています。ベトナムは中国、ラオス、カンボジアと国境を接しています。
+                </p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>ニュースレターに登録する</h2>
+                <p>受信トレイで月に1回ベトナムから新しい旅行の話を受け取ります。</p>
+                <div class="form-element">
+                    <input type="text" required placeholder="Eメール"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>インスタグラム</h2>
+                <div class="flex-row">
+                    <img src="./Asset/Instagram/Ha long.jpg" alt="insta1">
+                    <img src="/Asset/Instagram/Ha Noi.jpg" alt="insta2">
+                    <img src="/Asset/Instagram/HCM.jpg" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="/Asset/Instagram/Hoi an.jpg" alt="insta4">
+                    <img src="/Asset/Instagram/Hue.jpg" alt="insta5">
+                    <img src="/Asset/Instagram/Nha trang.jpg" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>フォローする</h2>
+                <p>フォローしましょう。</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                福井工業大・電気電子工学科 
+                <!-- | made by -->
+                <!-- <a href="#" target="_black">N.V.A <i class="fab fa-facebook-f"></i></a> -->
+            </h4>
+        </div>
+        
+    </footer>
+    <!-- ----------------MODAL PHO---------------------------- -->
+    <div class="modal modal-pho js-modal-pho">
+        <div class="modal-container js-modal-container-pho">
+            <div class="">
+                <i class="close-icon ti-close js-modal-close-pho"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="bag-icon ti-info-alt"></i>
+                フォー
+            </header>
+            <div class="modal-body-food">
+                <div class="food-img">
+                    <img src="./Asset/modal-food/pho.jpg" alt="" class="food-info-img">
+                </div>
+                <div class="food-text">
+                    <h3>フォーとは</h3>
+                    <p class="food-info">
+                        フォーは、スープ、麺、肉、新鮮なハーブで構成される伝統的なベトナムのスープです。牛肉と鶏の骨をさまざまなスパイスと一緒に、味がちょうど良くなるまで何時間も煮込んだ独特の味わいです。
+                        <br>
+                        <br>
+                        フォーは具に牛肉を入れるか鶏肉を入れるかの2種類に大別されます。牛肉入りを「フォーボー」、鶏肉入りを「フォーガー」と呼びます。ベトナムは首都ハノイのある北部と、最大の都市であるホーチミンのある南部とで気候も食事も異なり、その影響はフォーにも表れています。
+                    </p>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <!-- -----------------JS PHO------------------ -->
+    <script>
+        const phoBtn = document.querySelector('.js-btn-pho')
+        const modalPho = document.querySelector('.js-modal-pho')
+        const modalPhoClose =document.querySelector('.js-modal-close-pho')
+        const modalContainerPho = document.querySelector('.js-modal-container-pho')
+
+        function showPho () {
+            modalPho.classList.add('open')
+        }
+
+        function hidePho () {
+            modalPho.classList.remove('open')
+        }
+
+        phoBtn.addEventListener('click', showPho)
+        modalPhoClose.addEventListener('click', hidePho)
+
+        modalPho.addEventListener('click', hidePho)
+
+        modalContainerPho.addEventListener('click', function (event){
+            event.stopPropagation(modalContainerPho)
+        }
+        )
+    </script>
+    <!-- ------------BANH CHUNG------------------------- -->
+    <div class="modal modal-banhchung js-modal-banhchung">
+        <div class="modal-container js-modal-container-banhchung">
+            <div class="">
+                <i class="close-icon ti-close js-modal-close-banhchung"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="bag-icon ti-info-alt"></i>
+                バインチュン
+            </header>
+            <div class="modal-body-food">
+                <div class="food-img">
+                    <img src="./Asset/modal-food/banhchung.jpg" alt="" class="food-info-img">
+                </div>
+                <div class="food-text">
+                    <h3>バインチュンとは</h3>
+                    <p class="food-info">
+                        バインチュンは先祖への感謝を示す、ベトナムの伝統的なちまきです。材料はシンプルにもち米・緑豆・豚肉の3種類。これをラーゾン（Lá dong）などの葉に包んで10時間以上茹でたものを指します。主にテト（旧正月）のシーズンや、ベトナム建国の祖であるフン王の命日など、お祝い事に際してこの料理を作ります。
+                        <br>
+                        <br>
+                        テトが来るたびに家族全員が集まって、一緒にライスケーキを作ります。バインチュンを蒸している間、噴気孔から出てくるもち米と葉っぱの香ばしい香りが漂ってきます。完成したら近所の方々に配ります。
+                    </p>
+                </div>
+            </div>                     
+        </div>
+    </div>
+    <!-- -----------------JS BANH CHUNG------------------ -->
+    <script>
+        const banhchungBtn = document.querySelector('.js-btn-banhchung')
+        const modalbanhchung = document.querySelector('.js-modal-banhchung')
+        const modalbanhchungClose =document.querySelector('.js-modal-close-banhchung')
+        const modalContainerbanhchung = document.querySelector('.js-modal-container-banhchung')
+
+        function showbanhchung () {
+            modalbanhchung.classList.add('open')
+        }
+
+        function hidebanhchung () {
+            modalbanhchung.classList.remove('open')
+        }
+
+        banhchungBtn.addEventListener('click', showbanhchung)
+        modalbanhchungClose.addEventListener('click', hidebanhchung)
+
+        modalbanhchung.addEventListener('click', hidebanhchung)
+
+        modalContainerbanhchung.addEventListener('click', function (event){
+            event.stopPropagation(modalContainerbanhchung)
+        }
+        )
+
+    </script>
+
+    <!-- ------------BANH MI------------------------- -->
+    <div class="modal modal-banhmi js-modal-banhmi">
+        <div class="modal-container js-modal-container-banhmi">
+            <div class="">
+                <i class="close-icon ti-close js-modal-close-banhmi"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="bag-icon ti-info-alt"></i>
+                バインミー
+            </header>
+            <div class="modal-body-food">
+                <div class="food-img">
+                    <img src="./Asset/modal-food/banhmi.jpg" alt="" class="food-info-img">
+                </div>
+                <div class="food-text">
+                    <h3>バインミーとは</h3>
+                    <p class="food-info">
+                        ベトナムのローカルフード「バインミー」とはベトナム風サンドイッチのことです。バインミーはフランスパンに野菜やお肉が挟まったベトナムオリジナルのローカルフードで、露店やカフェなど様々なところで販売されています。
+                        <br>
+                        お好みでなますやチリソース、焼いた卵を入れることもでき、カスタマイズも楽しめます。ちなみに、ベトナムではフランス植民地時代にフランスパンを食べる文化が広がりました。現在でもフランスパンは様々なお店で販売されており、ベトナムでポピュラーなパンの一つです。一昔前は露店のバインミーは食あたりを起こすといううわさもありましたが、現在は安全管理が厳しくなり、安心して食べることができます。
+                    </p>
+                </div>
+            </div>                 
+        </div>
+    </div>
+    <!-- -----------------JS BANH MI------------------ -->
+    <script>
+        const banhmiBtn = document.querySelector('.js-btn-banhmi')
+        const modalbanhmi = document.querySelector('.js-modal-banhmi')
+        const modalbanhmiClose =document.querySelector('.js-modal-close-banhmi')
+        const modalContainerbanhmi = document.querySelector('.js-modal-container-banhmi')
+
+        function showbanhmi () {
+            modalbanhmi.classList.add('open')
+        }
+
+        function hidebanhmi () {
+            modalbanhmi.classList.remove('open')
+        }
+
+        banhmiBtn.addEventListener('click', showbanhmi)
+        modalbanhmiClose.addEventListener('click', hidebanhmi)
+
+        modalbanhmi.addEventListener('click', hidebanhmi)
+
+        modalContainerbanhmi.addEventListener('click', function (event){
+            event.stopPropagation(modalContainerbanhmi)
+        }
+        )
+    </script>
+
+
+    <!-- ------------BANH XEO------------------------- -->
+    <div class="modal modal-banhxeo js-modal-banhxeo">
+        <div class="modal-container js-modal-container-banhxeo">
+            <div class="">
+                <i class="close-icon ti-close js-modal-close-banhxeo"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="bag-icon ti-info-alt"></i>
+                バインセオ
+            </header>
+            <div class="modal-body-food">
+                <div class="food-img">
+                    <img src="./Asset/modal-food/banhxeo.jpg" alt="" class="food-info-img">
+                </div>
+                <div class="food-text">
+                    <h3>バインセオとは</h3>
+                    <p class="food-info">
+                        バインセオとはお好み焼きのようなベトナム料理の一つです。見た目はまるでオムレツのようですが、鮮やかな黄色は卵ではなく、ターメリックの色！生地に入れたココナッツミルクの甘い香りが人気です。ふちをパリパリッとした食感に仕上げるために、最後に油を回し入れて焼くのがポイント♪フレッシュなハーブや葉野菜と一緒に食べるのが本場流の食べ方ですよ。手に入りにくいベトナムの魚醤（ヌクマム)の代わりに、今回のレシピではタイの魚醤（ナンプラー）を使って、ご家庭でも手軽に作っていただけるようにアレンジしています。
+                        <br>
+
+                    </p>
+                </div>
+            </div>              
+        </div>
+    </div>
+    <!-- -----------------JS BANH XEO------------------ -->
+    <script>
+        const banhxeoBtn = document.querySelector('.js-btn-banhxeo')
+        const modalbanhxeo = document.querySelector('.js-modal-banhxeo')
+        const modalbanhxeoClose =document.querySelector('.js-modal-close-banhxeo')
+        const modalContainerbanhxeo = document.querySelector('.js-modal-container-banhxeo')
+
+        function showbanhxeo () {
+            modalbanhxeo.classList.add('open')
+        }
+
+        function hidebanhxeo () {
+            modalbanhxeo.classList.remove('open')
+        }
+
+        banhxeoBtn.addEventListener('click', showbanhxeo)
+        modalbanhxeoClose.addEventListener('click', hidebanhxeo)
+
+        modalbanhxeo.addEventListener('click', hidebanhxeo)
+
+        modalContainerbanhxeo.addEventListener('click', function (event){
+            event.stopPropagation(modalContainerbanhxeo)
+        }
+        )
+
+    </script>
+
+     <!-- ------------GOI CUON------------------------- -->
+     <div class="modal modal-goicuon js-modal-goicuon">
+        <div class="modal-container js-modal-container-goicuon">
+            <div class="">
+                <i class="close-icon ti-close js-modal-close-goicuon"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="bag-icon ti-info-alt"></i>
+                ゴイ・クオン
+            </header>
+            <div class="modal-body-food">
+                <div class="food-img">
+                    <img src="./Asset/modal-food/goicuon.jpg" alt="" class="food-info-img">
+                </div>
+                <div class="food-text">
+                    <h3>ゴイ・クオンとは</h3>
+                    <p class="food-info">
+                        ベトナムの代表的なスナック、ゴイクン（生春巻、サマーロール、サラダロール）をご紹介します。
+                        ベトナム現地でもたいへん人気がある安価に食べられるスナックです。世界中のベトナム料理店でも前菜としてほぼ必ずメニューにあります。発音はさまざまでゴイクン、ゴイクォン等とも呼ばれています。
+                        <br>                
+                        ベトナム料理　”ゴイクォン”生春巻き。これからの季節食べたくなります。ヌクチャム（たれ）をつけてめしあがれ
+                    </p>
+                </div>
+            </div>                  
+        </div>
+    </div>
+    <!-- -----------------JS GOI CUON------------------ -->
+    <script>
+        const goicuonBtn = document.querySelector('.js-btn-goicuon')
+        const modalgoicuon = document.querySelector('.js-modal-goicuon')
+        const modalgoicuonClose =document.querySelector('.js-modal-close-goicuon')
+        const modalContainergoicuon = document.querySelector('.js-modal-container-goicuon')
+
+        function showgoicuon () {
+            modalgoicuon.classList.add('open')
+        }
+
+        function hidegoicuon () {
+            modalgoicuon.classList.remove('open')
+        }
+
+        goicuonBtn.addEventListener('click', showgoicuon)
+        modalgoicuonClose.addEventListener('click', hidegoicuon)
+
+        modalgoicuon.addEventListener('click', hidegoicuon)
+
+        modalContainergoicuon.addEventListener('click', function (event){
+            event.stopPropagation(modalContainergoicuon)
+        }
+        )
+    </script>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./Js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./Js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./Js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./Js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+@media (max-width :740px) {
+    .food-img {
+        float: none;
+        width: 100% ;
+        margin-right: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .food-info-img {
+        width: 100%;
+    }
+    
+    .food-text p {
+        width: 100%;
+    }
+
+    .home-heading {
+        font-size :15px;
+    }
+
+    .home-heading-sub {
+        font-size: 30px;
+    }
+
+    .travel-text{
+        font-size: 10px;
+    }
+
+    .social{
+        display: none;
+    }
+}
+
+@media (max-width :1023px) and ( min-width : 740px) {
+    .nav-items{
+        display: none !important;
+    }
+}
