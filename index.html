@@ -90,24 +90,17 @@
 <div id="move-up-s" class="move-up">
             <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
 </div>
-<!-- <a id="nutbacktotop" href="javascript:void(0)" title="Back to Top"><img src="https://nhatbanonline.net/wp-content/uploads/2019/03/back-to-top.png" alt="Quay lại đầu trang"/></a> -->
+    
 <script>
-//Khi người dùng cuộn chuột thì gọi hàm scrollFunction
    window.onscroll = function() {scrollFunction()};
-   // khai báo hàm scrollFunction
    function scrollFunction() {
-       // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
        if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-           //nếu lớn hơn 700px thì hiện button
            document.getElementById("move-up-s").style.display = "block";
        } else {
-            //nếu nhỏ hơn 20px thì ẩn button
            document.getElementById("move-up-s").style.display = "none";
        }
    }
-   //gán sự kiện click cho button
    document.getElementById('move-up-s').addEventListener("click", function(){
-       //Nếu button được click thì nhảy về đầu trang
        document.body.scrollTop = 0;
        document.documentElement.scrollTop = 0;
    });
@@ -183,7 +176,6 @@
                             <div class="blog-title">
                                 <h3>フォー</h3>
                                 <button class="btn btn-blog js-btn-pho">詳細</button>
-                                <!-- <span>2 minutes</span> -->
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
@@ -191,7 +183,6 @@
                             <div class="blog-title">
                                 <h3>バインチュン</h3>
                                 <button class="btn btn-blog js-btn-banhchung">詳細</button>
-                                <!-- <span>2 minutes</span> -->
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
@@ -199,7 +190,6 @@
                             <div class="blog-title">
                                 <h3>バインミー</h3>
                                 <button class="btn btn-blog js-btn-banhmi">詳細</button>
-                                <!-- <span>2 minutes</span> -->
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
@@ -207,7 +197,6 @@
                             <div class="blog-title">
                                 <h3>バインセオ</h3>
                                 <button class="btn btn-blog js-btn-banhxeo">詳細</button>
-                                <!-- <span>2 minutes</span> -->
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
@@ -215,7 +204,6 @@
                             <div class="blog-title">
                                 <h3>ゴイ・クオン</h3>
                                 <button class="btn btn-blog js-btn-goicuon">詳細</button>
-                                <!-- <span>2 minutes</span> -->
                             </div>
                         </div>                       
                     </div>
@@ -432,19 +420,15 @@
                         <ul class="category-list">
                             <li class="list-items" data-aos="fade-left" data-aos-delay="100">
                                 <a href="#">ベトナム社会主義共和国</a>
-                                <!-- <span>(05)</span> -->
                             </li>
                             <li class="list-items" data-aos="fade-left" data-aos-delay="200">
                                 <a href="#">首都：&emsp; ハノイ</a>
-                                <!-- <span>(02)</span> -->
                             </li>
                             <li class="list-items" data-aos="fade-left" data-aos-delay="300">
                                 <a href="#">面積： &emsp; 約31万1,000k㎡</a>
-                                <!-- <span>(07)</span> -->
                             </li>
                             <li class="list-items" data-aos="fade-left" data-aos-delay="400">
                                 <a href="#">人口：&emsp; 約9,734万人</a>
-                                <!-- <span>(01)</span> -->
                             </li>              
                         </ul>
                     </div>
@@ -459,7 +443,6 @@
                                 </div>
                                 <div class="post-info flex-row">
                                     <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;01月01日 (旧暦)</span>
-                                    <!-- <span></span> -->
                                 </div>
                             </div>
                             <div class="post-title">
@@ -476,7 +459,6 @@
                                 </div>
                                 <div class="post-info flex-row">
                                     <span><i class="fas fa-calendar-alt text-gray"></i>04月30日</span>
-                                    <!-- <span>2 Commets</span> -->
                                 </div>
                             </div>
                             <div class="post-title">
@@ -512,7 +494,6 @@
                                 </div>
                                 <div class="post-info flex-row">
                                     <span><i class="fas fa-calendar-alt text-gray"></i>10月20日</span>
-                                    <!-- <span>2 Commets</span> -->
                                 </div>
                             </div>
                             <div class="post-title">
@@ -550,7 +531,6 @@
                                 </div>
                                 <div class="post-info flex-row">
                                     <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;15 8月15日(旧暦)</span>
-                                    <!-- <span>2 Commets</span> -->
                                 </div>
                             </div>
                             <div class="post-title">
@@ -570,7 +550,6 @@
                                 </div>
                                 <div class="post-info flex-row">
                                     <span><i class="fas fa-calendar-alt text-gray"></i>10月30日</span>
-                                    <!-- <span>2 Commets</span> -->
                                 </div>
                             </div>
                             <div class="post-title">
@@ -588,7 +567,6 @@
                                 </div>
                                 <div class="post-info flex-row">
                                     <span><i class="fas fa-calendar-alt text-gray"></i>04月30日</span>
-                                    <!-- <span>2 Commets</span> -->
                                 </div>
                             </div>
                             <div class="post-title">
@@ -607,7 +585,6 @@
                                 </div>
                                 <div class="post-info flex-row">
                                     <span><i class="fas fa-calendar-alt text-gray"></i>01月15日（旧暦）</span>
-                                    <!-- <span>2 Commets</span> -->
                                 </div>
                             </div>
                             <div class="post-title">
@@ -626,7 +603,6 @@
                                 </div>
                                 <div class="post-info flex-row">
                                     <span><i class="fas fa-calendar-alt text-gray"></i>03月10日</span>
-                                    <!-- <span>2 Commets</span> -->
                                 </div>
                             </div>
                             <div class="post-title">
@@ -661,7 +637,6 @@
                             <span class="tag" data-aos="flip-up" data-aos-delay="500">Independence Day</span>
                             <span class="tag" data-aos="flip-up" data-aos-delay="600">Reunification Day</span>
                             <span class="tag" data-aos="flip-up" data-aos-delay="700">Tet holiday</span>
-                            <!-- <span class="tag" data-aos="flip-up" data-aos-delay="800">project</span> -->
                         </div>
                     </div>
                     
@@ -732,8 +707,6 @@
         <div class="rights flex-row">
             <h4 class="text-gray">
                 福井工業大・電気電子工学科 
-                <!-- | made by -->
-                <!-- <a href="#" target="_black">N.V.A <i class="fab fa-facebook-f"></i></a> -->
             </h4>
         </div>
         
